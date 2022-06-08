@@ -4,7 +4,7 @@ import './connectionStatus.scss';
 
 class ConnectionStatus extends React.Component {
   state = {
-    status: 'Online'
+    status: 'online'
   }
 
   componentDidMount() {
@@ -14,13 +14,13 @@ class ConnectionStatus extends React.Component {
 
   isConnect = () => {
     this.setState({
-      status: 'Online'
+      status: 'online'
     })
   }
 
   notConnect = () => {
     this.setState({
-      status: 'Offline'
+      status: 'offline'
     })
   }
 
@@ -31,7 +31,7 @@ class ConnectionStatus extends React.Component {
 
   render() {
     let classStatus = "status";
-    if (this.state.status === 'Offline') {
+    if (this.state.status === 'offline') {
       classStatus = "status status_offline";
     }
 
